@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* ============================
+    BASIC SETUP
+=============================== */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+a:hover {
+  color: #ff006e;
+}
+h1 {
+  font-size: 56px;
+  color: #fff;
+  line-height: 72px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+h2 {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: normal;
+  margin: 20px;
+}
+h4 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: normal;
+  margin: 7px 0;
+}
+h5 {
+  color: #f40469;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+img {
+  width: 100%;
+}
+
+/* ============================
+    REUSABLE COMPONENET
+=============================== */
+.btn-primary {
+  background: #ff006e;
+  color: #fff;
+  border: 0;
+  border-radius: 25px;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+.btn-primary:hover {
+  background: #ff006e;
+}
+
+/* ============================
+    NAVBAR
+=============================== */
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navbar-brand {
+  color: #ff006e !important;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 48px;
+}
+.nav-link {
+  font-size: 18px;
+  color: #191720;
+  margin: 0px 10px;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #ff006e;
+}
+
+/* ============================
+    HEADER
+=============================== */
+.header {
+  background-image: url(../img/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+.banner-inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form-inline {
+  width: 60%;
+  margin: 0 auto;
+}
+.input-group-text {
+  padding: 10.9px 20px;
+  border-radius: 20px 0 0 20px;
+}
+.header .btn.btn-primary {
+  padding: 10px 20px;
+}
+.header input {
+  padding: 11px;
+}
+.header .form-inline i {
+  margin-right: 10px;
+  color: #ff006e;
+}
+
+/* ============================
+    APP SECTION
+=============================== */
+.app-content {
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ============================
+    APP SECTION
+=============================== */
+
+.restaurant a {
+  color: #000;
+}
+.restaurant a:hover {
+  color: #ff006e;
+}
+.restaurant .view-all {
+  margin-top: 40px;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.restaurent-item {
+  margin-bottom: 40px;
+}
+.restaurent-item .delivery-details {
+  display: flex;
+}
+.restaurent-item .delivery-details p {
+  font-size: 18px;
+  line-height: 24px;
+}
+.restaurent-item .delivery-details p:first-of-type {
+  margin-right: 50px;
+}
+
+/* ============================
+    PROCESS SECTION
+=============================== */
+.process-items {
+  margin: 50px auto;
+  width: 80%;
+}
+.process-item {
+  padding: 60px 45px;
+  box-shadow: 0 4px 10px 0 #bfbfbf;
+  border-radius: 30px;
+}
+.process-item.text-center img {
+  width: auto;
+}
+.process-item p {
+  font-size: 14px;
+}
+
+/* ============================
+    DOWNLOAD SECTION
+=============================== */
+.download .row {
+  background-image: url(../img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 60px;
+  border-radius: 30px;
+  color: #fff;
+}
+.download .d-flex {
+  margin-top: 30px;
+}
+.download .btn-primary:first-of-type {
+  background: #283646;
+  margin-right: 30px;
+}
+.download .btn-primary:last-child {
+  background: none;
+}
+
+/* ============================
+    FEEDBACK
+=============================== */
+.feedback-items {
+  margin-bottom: 50px;
+  background-image: url(../img/feedback-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 30px 0;
+  margin-top: 30px;
+}
+.feedback-item .client-img img {
+  height: 80px;
+  width: 80px;
+  margin: 20px auto;
+}
+.feedback-text p {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 35px;
+  color: #fff;
+}
+.feedback-item .client-name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #f40469;
+}
+
+#feedback-items .owl-prev,
+#feedback-items .owl-next {
+  background: none;
+  color: #212832;
+}
+#feedback-items .owl-nav > button {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  transition: 0.4s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#feedback-items .owl-prev:hover,
+#feedback-items .owl-next:hover {
+  background: #f40469;
+  color: #fff;
+}
+
+#feedback-items .owl-nav > .owl-next {
+  right: -60px;
+}
+#feedback-items .owl-nav > .owl-prev {
+  left: -60px;
+}
+.client-logos {
+  margin-top: 30px;
+}
+.client-logos img {
+  width: auto;
+}
+
+/* ============================
+    FOOTER TOP
+=============================== */
+.footer-top {
+  padding: 40px;
+  background: #fff;
+}
+.footer-top .links {
+  margin-top: 15px;
+}
+.footer-top .links a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  margin-left: 20px;
+  transition: 0.4s;
+  font-weight: 500;
+}
+.footer-top .links a:hover {
+  color: #f40469;
+}
+
+/* ============================
+    FOOTER TOP
+=============================== */
+.footer {
+  position: relative;
+  padding: 0;
+}
+footer {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+footer .links a {
+  display: flex;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.4s;
+}
+footer .links a:hover {
+  color: #ff5331;
+}
+footer img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: auto;
+}
